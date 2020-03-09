@@ -96,6 +96,7 @@ namespace eastl
 	///     hash_set<string> hashSet;
 	///     i = hashSet.find_as("hello", hash<char*>(), equal_to_2<string, char*>());
 	///
+  /// 关联容器-hash_set通过哈希表实现
 	template <typename Value, typename Hash = eastl::hash<Value>, typename Predicate = eastl::equal_to<Value>, 
 			  typename Allocator = EASTLAllocatorType, bool bCacheHashCode = false>
 	class hash_set

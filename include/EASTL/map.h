@@ -70,6 +70,7 @@ namespace eastl
 	///     MemoryPool myPool(sizeof(WidgetMap::node_type), 100);          // Make a pool of 100 Widget nodes.
 	///     WidgetMap myMap(&myPool);                                      // Create a map that uses the pool.
 	///
+  /// 关联容器map通过红黑树实现
 	template <typename Key, typename T, typename Compare = eastl::less<Key>, typename Allocator = EASTLAllocatorType>
 	class map
 		: public rbtree<Key, eastl::pair<const Key, T>, Compare, Allocator, eastl::use_first<eastl::pair<const Key, T> >, true, true>

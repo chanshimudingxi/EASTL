@@ -96,6 +96,7 @@ namespace eastl
 	///     hash_map<string, int> hashMap;
 	///     i = hashMap.find_as("hello", hash<char*>(), equal_to_2<string, char*>());
 	///
+  /// 关联容器-hash_map通过哈希表实现
 	template <typename Key, typename T, typename Hash = eastl::hash<Key>, typename Predicate = eastl::equal_to<Key>, 
 			  typename Allocator = EASTLAllocatorType, bool bCacheHashCode = false>
 	class hash_map

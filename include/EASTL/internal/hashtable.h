@@ -823,6 +823,7 @@ namespace eastl
 	/// already known, allowing us to avoid a redundant hash operation
 	/// in the normal find path.
 	/// 
+  /// 哈希表是最底层的基础结构
 	template <typename Key, typename Value, typename Allocator, typename ExtractKey, 
 			  typename Equal, typename H1, typename H2, typename H, 
 			  typename RehashPolicy, bool bCacheHashCode, bool bMutableIterators, bool bUniqueKeys>

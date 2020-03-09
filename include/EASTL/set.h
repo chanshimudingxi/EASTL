@@ -79,6 +79,7 @@ namespace eastl
 	///     MemoryPool myPool(sizeof(WidgetSet::node_type), 100);       // Make a pool of 100 Widget nodes.
 	///     WidgetSet mySet(&myPool);                                   // Create a map that uses the pool.
 	///
+  /// 关联容器-set通过rbtree实现
 	template <typename Key, typename Compare = eastl::less<Key>, typename Allocator = EASTLAllocatorType>
 	class set
 		: public rbtree<Key, Key, Compare, Allocator, eastl::use_self<Key>, false, true>

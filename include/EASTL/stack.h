@@ -53,6 +53,9 @@ namespace eastl
 	///
 	/// In practice this means vector, deque, string, list, intrusive_list. 
 	///
+  /// stack的底层容器可以是vector，deque（默认），string，list，intrusive_list
+  /// 用deque实现时，容器的大小改变时(数据量较大)，动作比vector就小多了（常数复杂度），并且当容器的大小变小时，还可以适当减小容量；
+  /// 但push_back 的逻辑相对vector复杂一点，但是比list的性能高，list在于容器变大变小比较方便
 	template <typename T, typename Container = eastl::vector<T> >
 	class stack
 	{

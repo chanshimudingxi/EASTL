@@ -24,6 +24,7 @@ namespace eastl
 	/// sorted in any particular order.  We provide a template alias here to
 	/// ensure feature parity with the original eastl::hash_set.
 	///
+  /// 关联容器-unordered_set就是hash_set
 	#if !defined(EA_COMPILER_NO_TEMPLATE_ALIASES)
 		template <typename Value,
 				  typename Hash = eastl::hash<Value>,

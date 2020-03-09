@@ -380,6 +380,7 @@ namespace eastl
 	/// type other than the tree's key type. See the find_as function
 	/// for more documentation on this.
 	///
+  /// 红黑树
 	template <typename Key, typename Value, typename Compare, typename Allocator, 
 			  typename ExtractKey, bool bMutableIterators, bool bUniqueKeys>
 	class rbtree

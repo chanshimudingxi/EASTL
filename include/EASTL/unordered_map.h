@@ -23,6 +23,7 @@ namespace eastl
 	/// any particular order.  We provide a template alias here to ensure feature
 	/// parity with the original eastl::hash_map.
 	///
+  /// 关联容器-unordered_map就是hash_map
 	#if !defined(EA_COMPILER_NO_TEMPLATE_ALIASES)
 		template <typename Key,
 				  typename T,
